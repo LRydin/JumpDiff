@@ -5,7 +5,7 @@ For the moment the library is available from TestPyPI, so you can use
 
 ::
 
-   pip install -i https://test.pypi.org/simple/ JumpDiff
+   pip install JumpDiff
 
 Then on your favourite editor just use
 

@@ -1,4 +1,9 @@
-[![Build Status](https://travis-ci.org/LRydin/JumpDiff.svg?branch=master)](https://travis-ci.org/LRydin/JumpDiff) [![codecov](https://codecov.io/gh/LRydin/JumpDiff/branch/master/graph/badge.svg)](https://codecov.io/gh/LRydin/JumpDiff)[![Documentation Status](https://readthedocs.org/projects/jumpdiff/badge/?version=latest)](https://jumpdiff.readthedocs.io/en/latest/?badge=latest)
+![PyPI - License](https://img.shields.io/pypi/l/JumpDiff)
+![PyPI](https://img.shields.io/pypi/v/JumpDiff)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/JumpDiff)
+[![Build Status](https://travis-ci.org/LRydin/JumpDiff.svg?branch=master)](https://travis-ci.org/LRydin/JumpDiff)
+[![codecov](https://codecov.io/gh/LRydin/JumpDiff/branch/master/graph/badge.svg)](https://codecov.io/gh/LRydin/JumpDiff)
+[![Documentation Status](https://readthedocs.org/projects/jumpdiff/badge/?version=latest)](https://jumpdiff.readthedocs.io/en/latest/?badge=latest)
 
 # JumpDiff
 `JumpDiff` is a `python` library with non-parametric Nadaraya─Watson estimators to extract the parameters of jump-diffusion processes.
@@ -8,7 +13,7 @@ With `JumpDiff` one can extract the parameters of a jump-diffusion process from 
 To install `JumpDiff`, run
 
 ```
-   pip install -i https://test.pypi.org/simple/ JumpDiff
+   pip install JumpDiff
 ```
 
 Then on your favourite editor just use
@@ -18,7 +23,7 @@ Then on your favourite editor just use
 ```
 
 ## Dependencies
-The library parameter estimation depends on `numpy` and `scipy` solely. The mathematical formulae depend on `scypy`. It stems from [`kramersmoyal`](https://github.com/LRydin/KramersMoyal) project, but functions independently from it<sup>3</sup>.
+The library parameter estimation depends on `numpy` and `scipy` solely. The mathematical formulae depend on `sympy`. It stems from [`kramersmoyal`](https://github.com/LRydin/KramersMoyal) project, but functions independently from it<sup>3</sup>.
 
 ## Documentation
 You can find the documentation [here](https://jumpdiff.readthedocs.io/).
@@ -122,7 +127,7 @@ If you need help with the code, the theory, or the implementation, drop us an em
 We abide to a [Conduct of Fairness](contributions.md).
 
 # Changelog
-- *Planned next version* - could one generalise the second-order corrections to higher order?
+- Version 1.0 - releasing the first full version.
 - Version 0.4 - Designing a set of self-consistency checks, the documentation, examples, and a trial code.
 - Version 0.3 - Designing a straightforward procedure to retrieve the jump amplitude and jump rate functions, alongside with a easy `sympy` displaying the correction.
 - Version 0.2 - Introducing the second-order corrections to the moments
@@ -131,7 +136,7 @@ We abide to a [Conduct of Fairness](contributions.md).
 # Literature and Support
 
 ### History
-This project was started in 2017 at the [neurophysik](https://www.researchgate.net/lab/Klaus-Lehnertz-Lab-2) by Leonardo Rydin Gorjão, Jan Heysel, Klaus Lehnertz, and M. Reza Rahimi Tabar, and separately by Pedro G. Lind, at the  Department of Computer Science, Oslo Metropolitan University. Pedro, Leonardo, and Dirk developed in 2019 and 2020 a set of corrections and an implementation for python, presented here.
+This project was started in 2017 at the [neurophysik](https://www.researchgate.net/lab/Klaus-Lehnertz-Lab-2) by Leonardo Rydin Gorjão, Jan Heysel, Klaus Lehnertz, and M. Reza Rahimi Tabar, and separately by Pedro G. Lind, at the Department of Computer Science, Oslo Metropolitan University. Pedro, Leonardo, and Dirk developed in 2019 and 2020 a set of corrections and an implementation for python, presented here.
 
 ### Funding
 Helmholtz Association Initiative _Energy System 2050 - A Contribution of the Research Field Energy_ and the grant No. VH-NG-1025 and *STORM - Stochastics for Time-Space Risk Models* project of the Research Council of Norway (RCN) No. 274410.

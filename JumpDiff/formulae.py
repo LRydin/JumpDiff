@@ -1,4 +1,4 @@
-## Delevoped by  Leonardo Rydin Gorjão and Pedro G. Lind.
+## Delevoped by Leonardo Rydin Gorjão and Pedro G. Lind.
 
 from sympy import bell, symbols, factorial, simplify
 
@@ -71,7 +71,27 @@ def F_formula(power):
 
 
 def F_formula_solver(power):
+    r"""
+    Generate the reciprocal relation of the moments to the Kramers─Moyal
+    coefficients by sequential iteration.
 
+    .. math::
+
+        D_n(x) &=  \frac{1}{\tau (n!)} \bigg[ \hat{B}_{n,1}
+        \left(M_1(x,\tau),M_2(x,\tau),\ldots,M_{n}(x,\tau)\right) \\
+        &\qquad  \left.-\frac{\tau}{2} \hat{B}_{n,2}
+        \left(M_1(x,\tau),M_2(x,\tau),\ldots,M_{n-1}(x,\tau)\right)\right].
+
+    Parameters
+    ----------
+    power: int
+        Desired order of the formula.
+
+    Returns
+    -------
+    term: sympy.symbols
+        Expression up to given ``power``.
+    """
     power = power + 1
     terms_to_sub = []
     for i in range(1, power):
