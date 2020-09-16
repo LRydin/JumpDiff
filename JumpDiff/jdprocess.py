@@ -75,9 +75,10 @@ def jdprocess(time: float, delta_t: float, a: callable, b: callable,
 
     assert callable(a) == True, "drift a(x) must be a function"
     assert callable(b) == True, "diffusion b(x) must be a function"
-    assert type(lamb) == int or type(lamb) == float, ("'lamb' is not an int or "
-            "float")
-    assert type(xi) == int or type(xi) == float, "'xi' is not an int or float"
+    assert isinstance(lamb, int) or isinstance(lamb, float), ("'lamb' is not an"
+            " int or float")
+    assert isinstance(xi, int) or isinstance(xi, float), ("'xi' is not an int "
+            "or float")
 
 
     # Define total length of timeseries
@@ -90,8 +91,8 @@ def jdprocess(time: float, delta_t: float, a: callable, b: callable,
     if init is None:
         X[0] = np.random.normal(loc = 0, scale = np.sqrt(delta_t), size = 1)
     else:
-        assert type(init) == int or type(init) == float, ("'init' is not an int"
-            " or float")
+        assert isinstance(init, int) or isinstance(init, float), ("'init' is "
+            "not an int or float")
         X[0] = float(init)
 
     # Generate the Gaussian noise
