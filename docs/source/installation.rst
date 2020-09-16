@@ -1,7 +1,7 @@
 Installation
 ============
 
-For the moment the library is available from TestPyPI, so you can use
+To install :code:`JumpDiff` simply use
 
 ::
 
